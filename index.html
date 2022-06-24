@@ -5,11 +5,81 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" >
         <title>Centro Boa Forma - Seu espaço de saúde</title>
         <link rel="stylesheet" href="img/fav.png">
-        <link rel="stylesheet" href="css/style.css">
 
+        <!-- GOOGLE ICONS -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- FONT AWESOME -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <!-- MATERIALIZE CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- CUSTOM CSS -->
+        <link rel="stylesheet" href="css/custom.css">
     </head>
     <body>
-        
+        <header>
+            <!-- MENU-MOBIlE-->          
+            <ul class="side-nav" id="menu-mobile">
+                <li><a href="#">Home</a>
+                <li><a href="#">Sobre o Boa forma</a>
+                <li><a href="#">Serviços</a>
+                <li><a href="#">Unidades</a>
+                <li><a href="#">Contato</a>
+            </ul>
+
+            <div class="navbar-fixed">
+                <nav class="navbar z-depth-0">
+                    <div class="nav-wrapper container">
+                        <h1 class="logo_text"> Centro Boa forma - Seu espaço de saúde </h1>
+                        <a href="#"><img class="logo_img" src="img/logo.png" alt="Centro Boa forma"></a>
+
+                        <ul class="right light hide-on-med-and-down">
+                            <li><a href="#">Home</a>
+                            <li><a href="#">Sobre o Boa forma</a>
+                            <li><a href="#">Serviços</a>
+                            <li><a href="#">Unidades</a>
+                            <li><a href="#">Contato</a>
+                        </ul>
+
+
+                        <a href="#" data-activates="menu-mobile" class="button-collapse right"><i class="material-icons">menu</i></a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+
+
+        <section class="home bloco"> 
+            <div class="row container banner">
+                <div class="col s12 center">
+                    <h2 class="white-text"> O melhor treinamento funcional da região.</h2>
+                    <p class="white-text light"> Um novo conceito em prevenção promoção e reabilitação da saúde 
+                    para quem busca a melhora do condicionamento e emagrecimento, além 
+                    de ser divertido e desafiador. Quer experimentar ?</p>
+                    <div class="row botoes">
+                        <a class="btn btn-large blue-logo" href="#">Sobre nós</a>
+                        <a class="btn btn-large white black-text" href="#">Contato</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- JQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- MATERIALIZE JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <!-- JAVASCRIPT -->
+        <script>
+            $(document).ready(function(){
+                // MENU MOBILE
+                $(".button-collapse").sideNav();
+            });
+        </script>
+
+
     </body>
 </html>
 

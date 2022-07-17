@@ -555,7 +555,7 @@
                                 <label for="subject"> Assunto</label>
                             </div>
                             <div class="input-field"> 
-                                <textarea id="message" class="materialize-textarea"></textarea>
+                                <textarea name="message" id="message" class="materialize-textarea"></textarea>
                                 <label for="message"> Mensagem</label>
                             </div>
                             <button class="btn blue-logo" type="submit">Enviar</button>
@@ -668,11 +668,18 @@
                 $(".navbar").removeClass("navbar-color");
             }
         })
-
-
         </script>
 
-
+        <?php
+        if(isset($_GET['status'])):
+            if($_GET['status'] = "sucesso"):
+            echo "<script>Materialize.toast('Enviado com sucesso!', 4000); </script>";
+            else:
+            echo "<script>Materialize.toast('Erro ao enviar', 4000); </script>";
+            endif;
+        endif;
+        ?>
+        
     </body>
 </html>
 
